@@ -13,11 +13,10 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  linux-64: python 
   number: 0
   skip: TRUE # [not py36]
   script: python -m pip install --no-deps --ignore-installed . --verbose 
-  
+
 requirements:
   host:
     - python
